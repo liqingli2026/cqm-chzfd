@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CCC 证书信息</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", "Microsoft YaHei", sans-serif;
+    background: #ffffff;
+    color: #333;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  /* ===== 顶部导航栏 ===== */
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px 6px;
+    background: #ededed;
+  }
+  .topbar .close {
+    font-size: 22px;
+    color: #333;
+    line-height: 1;
+    font-weight: 300;
+  }
+  .topbar .title-wrap {
+    text-align: center;
+  }
+  .topbar .title {
+    font-size: 17px;
+    font-weight: 600;
+    color: #000;
+  }
+  .topbar .domain {
+    font-size: 11px;
+    color: #7f7f7f;
+    margin-top: 1px;
+  }
+  .topbar .more {
+    font-size: 20px;
+    color: #333;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+
+  /* ===== CQM Logo 区 ===== */
+  .logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px 10px;
+    background: #fff;
+  }
+  .cqm-mark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+  }
+  .cqm-text {
+    font-size: 40px;
+    font-weight: 800;
+    color: #1e5faf;
+    letter-spacing: -1px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .cqm-swoosh {
+    width: 74px;
+    height: 8px;
+    margin-top: -2px;
+  }
+  .cqm-cn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .cqm-cn .cn-name {
+    font-size: 21px;
+    font-weight: 700;
+    color: #1e5faf;
+    letter-spacing: 1px;
+    white-space: nowrap;
+  }
+  .cqm-cn .en-name {
+    font-size: 10.5px;
+    color: #1e5faf;
+    margin-top: 3px;
+    white-space: nowrap;
+  }
+
+  /* ===== 信息表格 ===== */
+  table.cert {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    background: #fff;
+  }
+  table.cert td {
+    border: 1px solid #d9d9d9;
+    padding: 11px 10px;
+    vertical-align: middle;
+    line-height: 1.55;
+  }
+  table.cert td.label {
+    width: 32%;
+    background: #eef1f6;
+    color: #333;
+  }
+  table.cert td.value {
+    background: #f7f9fb;
+    color: #222;
+    word-break: break-all;
+  }
+
+  /* ===== 备注 ===== */
+  .notes {
+    padding: 12px 14px 6px;
+    background: #fff;
+    font-size: 13px;
+    color: #333;
+    line-height: 1.9;
+  }
+
+  /* ===== 页脚 ===== */
+  .footer {
+    margin-top: 14px;
+    background: #f2f2f2;
+    text-align: center;
+    padding: 16px 10px 22px;
+    font-size: 13px;
+    color: #333;
+    line-height: 2;
+  }
+</style>
+</head>
+<body>
+
+  <!-- 顶部导航栏 -->
+  <div class="topbar">
+    <span class="close">✕</span>
+    <div class="title-wrap">
+      <div class="title">CCC 证书信息</div>
+      <div class="domain">pc.cqm.cn</div>
+    </div>
+    <span class="more">•••</span>
+  </div>
+
+  <!-- CQM Logo -->
+  <div class="logo-area">
+    <div class="cqm-mark">
+      <span class="cqm-text">CQM</span>
+      <svg class="cqm-swoosh" viewBox="0 0 74 8">
+        <path d="M2 6 C 20 0, 54 0, 72 4" stroke="#f5b800" stroke-width="4" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="cqm-cn">
+      <div class="cn-name">方圆标志认证集团</div>
+      <div class="en-name">China Quality Mark Certification Group</div>
+    </div>
+  </div>
+
+  <!-- 证书信息表 -->
+  <table class="cert">
+    <tr>
+      <td class="label">证书编号</td>
+      <td class="value">2026122502131802</td>
+    </tr>
+    <tr>
+      <td class="label">发证机构</td>
+      <td class="value">方圆标志认证集团有限公司</td>
+    </tr>
+    <tr>
+      <td class="label">发证日期</td>
+      <td class="value">2026-09-09</td>
+    </tr>
+    <tr>
+      <td class="label">首次发证日期</td>
+      <td class="value">2026-09-09</td>
+    </tr>
+    <tr>
+      <td class="label">有效期至</td>
+      <td class="value">2031-09-08</td>
+    </tr>
+    <tr>
+      <td class="label">证书状态</td>
+      <td class="value">有效</td>
+    </tr>
+    <tr>
+      <td class="label">产品名称</td>
+      <td class="value">主机：直流分体式充电堆&nbsp;&nbsp;终端：直流充电风冷终端、直流充电液冷终端</td>
+    </tr>
+    <tr>
+      <td class="label">系列、型号、规格</td>
+      <td class="value">主机：ZFD-DC-2560kW、ZFD-DC-2400kW、ZFD-DC-2240kW、ZFD-DC-2080kW、ZFD-DC-1920kW、ZFD-DC-1760kW、ZFD-DC-1600kW、ZFD-DC-1440kW、ZFD-DC-1280kW、ZFD-DC-1120kW、ZFD-DC-960kW、ZFD-DC-800kW、ZFD-DC-720kW、ZFD-DC-600kW、ZFD-DC-480kW、ZFD-DC-360kW、ZFD-DC-240kW&nbsp;&nbsp;终端：ZD-DC-250T、ZD-DC-250Y、ZD-DC-300T、ZD-DC-300Y、ZD-DC-400T、ZD-DC-400Y、ZD-600Y</td>
+    </tr>
+    <tr>
+      <td class="label">认证委托人名称</td>
+      <td class="value">中帆德新能源集团有限公司</td>
+    </tr>
+    <tr>
+      <td class="label">认证委托人地址</td>
+      <td class="value">浙江省温州市乐清市乐清经济开发区经十路77号三楼</td>
+    </tr>
+    <tr>
+      <td class="label">生产者名称</td>
+      <td class="value">中帆德新能源集团有限公司</td>
+    </tr>
+    <tr>
+      <td class="label">生产者地址</td>
+      <td class="value">浙江省温州市乐清市乐清经济开发区经十路77号三楼</td>
+    </tr>
+    <tr>
+      <td class="label">生产企业名称</td>
+      <td class="value">中帆德新能源集团有限公司</td>
+    </tr>
+    <tr>
+      <td class="label">生产企业地址</td>
+      <td class="value">浙江省温州市乐清市乐清经济开发区经十路77号三楼</td>
+    </tr>
+    <tr>
+      <td class="label">产品标准和技术要求</td>
+      <td class="value">GB 39752-2024,GB 44263-2024</td>
+    </tr>
+  </table>
+
+  <!-- 备注 -->
+  <div class="notes">
+    注1：上述信息为该证书编号查询到的最新状态信息。<br>
+    注2：如对上述查询结果有疑义，请与发证机构联系。
+  </div>
+
+  <!-- 页脚 -->
+  <div class="footer">
+    方圆标志认证集团有限公司 版权所有<br>
+    国家认监委批准号：CNCA-R-2002-002
+  </div>
+
+</body>
+</html>
